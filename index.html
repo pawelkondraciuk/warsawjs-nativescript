@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>WarsawJS Slides: Template</title>
+    <title>WarsawJS Slides: NativeScript</title>
 
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,7 +17,7 @@
 </head>
 <body class="shower list">
     <header class="caption">
-        <h1>WarsawJS Slides: Template</h1>
+        <h1>NativeScript: Gentle introduction</h1>
         <p>We talk about JavaScript. Each month in Warsaw, Poland.</p>
     </header>
 
@@ -28,302 +28,228 @@
         </div>
         <div class="details">
             <!-- 1. Avatar -->
-            <img src="pictures/fake-speaker-avatar.jpg" alt="Speaker"/>
+            <img src="pictures/author.jpg" alt="Speaker"/>
 
             <!-- 2. Speaker -->
-            <h2>Speaker name</h2>
+            <h2>Paweł Kondraciuk</h2>
 
             <!-- 3. Presentation title -->
-            <h2><strong>"WarsawJS Slides: Template"</strong></h2>
+            <h2><strong>"NativeScript: Gentle introduction"</strong></h2>
 
             <!-- 4. Presentation date -->
-            <h2>XXXX-XX-XX</h2>
+            <h2>2016-08-10</h2>
 
             <!-- 5. Contact the speaker -->
-            <h2><a href="http://twitter.com/speaker">@speaker</a></h2>
+            <h2><a href="http://twitter.com/pawelkondraciuk">@pawelkondraciuk</a></h2>
         </div>
     </section>
 
     <section class="slide">
-        <h2>Please update slides:</h2>
+        <div class="fixed-table">
+            <div class="table-column">
+                <h2>Who?</h2>
+                Frontend Developer<br/>
+                ex Python Developer
+            </div>
+            <div class="next table-column center">
+                <h2>Where?</h2>
+                <p>codequest</p>
+                <img src="pictures/codequest.png" alt="codequest"/>
+            </div>
+            <div class="next table-column right">
+                <h2>From?</h2>
+                <p>Bialystok</p>
+                <img src="pictures/bialystok.jpg" alt="Bialystok"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>What are the common solutions?</h2>
         <ul>
-            <li>rename project at <mark>GitHub</mark> with snake-case convention</li>
-            <li><mark>description</mark> and <mark>link</mark> on GitHub repository profile</li>
-            <li>link to <mark>"Fork me on GitHub"</mark> on the bottom of document</li>
-            <li>setup presentation title in
-                <ul>
-                    <li><mark>&lt;title&gt;</mark> tag on the top of document in <mark>&lt;head&gt;</mark> tag</li>
-                    <li><mark>README.md</mark> file</li>
-                    <li><mark>&lt;h1&gt;</mark> tag at <mark>&lt;header&gt;</mark> tag on the top of document</li>
-                </ul>
-            </li>
+            <li>Native <mark>ObjC/Swift</mark>, <mark>C#</mark>, <mark>Java</mark></li>
+            <li class="next">Cross-compiled <mark>Xamarin</mark></li>
+            <li class="next">Hybrid <mark>PhoneGap</mark>, <mark>Cordova</mark></li>
+            <li class="next">Native <mark class="important">JavaScript</mark></li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>List Navigation</h2>
-        <ol>
-            <li>Ennui keffiyeh thundercats</li>
-            <li class="next">Jean shorts biodiesel</li>
-            <li class="next">Terry richardson, swag blog</li>
-            <li class="next">Locavore umami vegan helvetica</li>
-            <li class="next">Fingerstache kale chips</li>
-        </ol>
-        <p class="next">Before they sold out master</p>
+        <h2>Native JavaScript</h2>
+        <ul>
+            <li>Fuse - declarative markup</li>
+            <li class="next">Tabris.js - Cordova modification</li>
+            <li class="next">Appcelerator Titanium - paid, we don't like that</li>
+            <li class="next">Facebook React Native - learn once, write everywhere</li>
+            <li class="next"><mark>Telerik NativeScript</mark> - ...</li>
+        </ul>
     </section>
 
     <section class="slide">
-        <h2>Slide Header</h2>
-
-        <p>Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch letterpress.</p>
-        <p>Whatever authentic disrupt, you probably haven't heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid four loko quinoa.</p>
-        <p class="note">Echo Park 8-bit sustainable umami deep v Kickstarter.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Inline Elements</h2>
-
-        <p>Retro meh brunch <a href="">aesthetic</a> Cosby sweater Shoreditch. Banksy Tumblr
-            <strong>sriracha</strong>, flexitarian pug chia master cleanse vinyl
-            <em>wayfarers</em> fanny pack bespoke Helvetica <b>roof</b> party. Messenger bag retro cred
-            <i>Portland</i> next level. Yr stumptown Schlitz Carles deep v small batch. Hella sustainable messenger bag,
-            <mark>leggings</mark>
-            skateboard literally<sup>1</sup> bicycle rights H<sub>2</sub>0 mumblecore banh mi DIY VHS. Semiotics four loko street art asymmetrical. Asymmetrical
-            <code>&lt;paleo&gt;</code> you probably haven’t heard of.
-        </p>
-
-        <footer class="footer">
-            <p>Retro meh brunch <a href="">aesthetic</a> Cosby sweater Shoreditch. Banksy Tumblr
-                <strong>sriracha</strong>, flexitarian pug chia master cleanse vinyl
-                <em>wayfarers</em> fanny pack bespoke Helvetica <b>roof</b> party. Messenger bag retro cred
-                <i>Portland</i> next level. Yr stumptown Schlitz Carles deep v small batch. Hella sustainable messenger bag,
-                <mark>leggings</mark>
-                skateboard literally<sup>1</sup> bicycle rights H<sub>2</sub>0 mumblecore banh mi DIY VHS. Semiotics four loko street art asymmetrical. Asymmetrical
-                <code>&lt;paleo&gt;</code> you probably haven’t heard of.
-            </p>
-        </footer>
-    </section>
-
-    <section class="slide">
-        <h2>Columns</h2>
-        <p class="double">Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch American Apparel letterpress. Whatever authentic disrupt, you probably haven't heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid American Apparel four loko quinoa. Echo Park 8-bit sustainable.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Quotes</h2>
-        <blockquote>
-            <p>Flannel bicycle rights locavore selfies skateboard. Authentic fanny pack paleo four loko bespoke. Artisan tattooed chia XOXO ennui, lomo disrupt 8-bit art party Tumblr scenester.</p>
-        </blockquote>
-        <figure>
-            <blockquote>
-                <p>Post-ironic fashion axe flexitarian, Tonx narwhal messenger bag Tumblr. Portland gentrify deep v kale chips literally.</p>
-            </blockquote>
-            <figcaption>Yours Truly</figcaption>
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Nested Lists</h2>
-        <ol>
-            <li>Literally viral vegan, ugh drinking vinegar photo booth</li>
-            <li>Wes Anderson chillwave Marfa pour-over Etsy banh mi</li>
-            <li>Ethnic polaroid lo-fi iPhone ennui
+        <h2>Architecture</h2>
+        <ul>
+            <li>No DOM</li>
+            <li class="next">Native components</li>
+            <li class="next">
+                JavaScript Virtual Machine
                 <ul>
-                    <li>Yr wayfarers before they sold out Kickstarter asymmetrical</li>
-                    <li>Irony flexitarian readymade quinoa, kogi bespoke meggings narwhal</li>
-                    <li>Skateboard Etsy twee artisan Echo Park</li>
+                    <li>
+                        Google V8 JavaScript Engine
+                        <img src="pictures/android.png" alt="android"/>
+                    </li>
+                    <li>
+                        WebKit JavaScript Core
+                        <img src="pictures/windows.png" alt="windows"/>
+                        <img src="pictures/mac.png" alt="mac"/>
+                    </li>
                 </ul>
+                    
+                    
             </li>
-            <li>Tonx kitsch fingerstache readymade, retro single-origin coffee</li>
+            <li class="next">Node.js modules</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Telerik NativeScript</h2>
+        <ul>
+            <li>Goal: 100% shared code</li>
+            <li class="next">JavaScript, XML, CSS</li>
+            <li class="next"><mark class="important">Direct access</mark> to native API</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Direct API access</h2>
+        <pre style="font-size: 21px;" class="listing">
+            <code>// Android</code>
+            <code>var time = new <mark>android.text.format.Time()</mark>;</code>
+            <code>time.<mark>set(1, 0, 2015)</mark>;</code>
+            <code>console.log(time.<mark>format("%D")</mark>);</code>
+        </pre>
+        <pre style="font-size: 21px;" class="listing next">
+            <code>// iOS</code>
+            <code>var alert = new <mark>UIAlertView()</mark>;</code>
+            <code>alert.<mark>message</mark> = "Hello world!";</code>
+            <code>alert.<mark>addButtonWithTitle("OK")</mark>;</code>
+            <code>alert.<mark>show()</mark>;</code>
+        </pre>
+    </section>
+
+    <section class="slide">
+        <img src="pictures/javacode.png" alt="Java...Script" class="cover"/>
+    </section>
+
+    <section class="slide">
+        <img src="pictures/how-it-is-possible.jpg" alt="How it is even possible?!" class="cover"/>
+    </section>
+
+    <section class="slide">
+        <h2>Metadata</h2>
+        <img src="pictures/metadata-1.png" height="185x" alt="metadata-1" class="next v-middle"/>
+        <img src="pictures/metadata-2.png" height="185px" alt="metadata-2" class="next v-middle"/>
+        <img src="pictures/metadata-3.png" height="240px" alt="metadata-3" class="next v-middle"/>
+    </section>
+
+    <section class="slide prism">
+        <h2>How does it work?</h2>
+        <pre class="language-javascript">
+            <code>var file = new java.io.File(path);</code>
+        </pre>
+        <ol>
+            <li class="next">Metadata lookup <mark class="important">java.io.File()</mark></li>
+            <li class="next">Type conversion <mark class="important">string</mark> &rarr; <mark class="important">java.lang.String</mark></li>
+            <li class="next">Call dispatcher <mark class="important">java.io.File()</mark> &larr;&rarr; <mark class="important">file = FileProxy</mark></li>
         </ol>
     </section>
 
     <section class="slide">
-        <h2>Simple Table</h2>
-        <table>
-            <tr>
-                <th scope="col">Gentrify</th>
-                <th>Twee</th>
-                <th>Artisan</th>
-                <th>Banksy</th>
-            </tr>
-            <tr>
-                <th scope="row">Messenger</th>
-                <td>Mixtape</td>
-                <td>Small batch</td>
-                <td>Bicycle rights</td>
-            </tr>
-            <tr>
-                <th scope="row">Meggings</th>
-                <td>Freegan</td>
-                <td>Retro biodiesel</td>
-                <td>Slow-carb</td>
-            </tr>
-            <tr>
-                <th scope="row">Vegan</th>
-                <td>Occupy</td>
-                <td>Normcore</td>
-                <td>Put a bird on it</td>
-            </tr>
-            <tr>
-                <th scope="row">Next level</th>
-                <td>Selfies</td>
-                <td>Sustainable</td>
-                <td>Organic</td>
-            </tr>
-            <tr>
-                <th scope="row">Umami</th>
-                <td>Asymmetrical</td>
-                <td>Keytar</td>
-                <td>Craft beer</td>
-            </tr>
-            <tr>
-                <th scope="row">Biodiesel</th>
-                <td>Haven’t heard</td>
-                <td>Skateboard</td>
-                <td>Farm-to-table</td>
-            </tr>
-        </table>
+        <h2>Why NativeScript access native API directly whereas React Native uses wrappers?</h2>
+        <p>UI Thread</p>
     </section>
 
     <section class="slide">
-        <h2>Striped Table</h2>
-        <table class="striped">
-            <tr>
-                <th scope="col">Gentrify</th>
-                <th>Twee</th>
-                <th>Artisan</th>
-                <th>Banksy</th>
-            </tr>
-            <tr>
-                <th scope="row">Messenger</th>
-                <td>Mixtape</td>
-                <td>Small batch</td>
-                <td>Bicycle rights</td>
-            </tr>
-            <tr>
-                <th scope="row">Meggings</th>
-                <td>Freegan</td>
-                <td>Retro biodiesel</td>
-                <td>Slow-carb</td>
-            </tr>
-            <tr>
-                <th scope="row">Vegan</th>
-                <td>Occupy</td>
-                <td>Normcore</td>
-                <td>Put a bird on it</td>
-            </tr>
-            <tr>
-                <th scope="row">Next level</th>
-                <td>Selfies</td>
-                <td>Sustainable</td>
-                <td>Organic</td>
-            </tr>
-            <tr>
-                <th scope="row">Umami</th>
-                <td>Asymmetrical</td>
-                <td>Keytar</td>
-                <td>Craft beer</td>
-            </tr>
-            <tr>
-                <th scope="row">Biodiesel</th>
-                <td>Haven’t heard</td>
-                <td>Skateboard</td>
-                <td>Farm-to-table</td>
-            </tr>
-        </table>
-    </section>
-
-    <section class="slide prism">
-        <h2>Listing Slide</h2>
-
-        <pre style="font-size: 45px;" class="language-javascript line-numbers">
-            <code>
-                function wrap(value) {
-                    return function () {
-                        return value;
-                    }
-                }
-
-                function bind(monad, f) {
-                    return f(monad());
-                }
-            </code>
-        </pre>
-    </section>
-
-    <section class="slide prism">
-        <pre style="font-size: 30px;" class="language-javascript line-numbers">
-            <code>
-                var monad = wrap('cookie');
-                bind(monad, (value) => {
-                    console.info(value);
-                    return wrap(value);
-                });
-                monad = bind(monad, (value) => {
-                    return wrap({ type: value });
-                });
-                bind(monad, (value) => {
-                    console.log(value);
-                    return wrap(value);
-                });
-            </code>
+        <h2>File system</h2>
+        <pre class="listing">
+            <code>var fs = <mark>require("file-system")</mark>;</code>
+            <code>var documents = fs.knownFolders.documents();</code>
+            <code>documents.<mark>getFile("Test.txt").readText()</mark></code>
+            <code>    .then(function (<mark>content</mark>) {</code>
+            <code>        // Successfully read the file's content.</code>
+            <code>    });</code>
         </pre>
     </section>
 
     <section class="slide">
-        <h2 class="shout"><a href="">Linked</a> Shout</h2>
+        <h2>Http</h2>
+        <pre class="listing">
+            <code>var http = <mark>require("http");</mark></code>
+            <code>http.<mark>getJSON("https://httpbin.org/get")</mark></code>
+            <code>    .then(function (<mark>r</mark>) {</code>
+            <code>        // Argument (r) is JSON!</code>
+            <code>    });</code>
+        </pre>
+    </section>
+
+    <section class="slide prism">
+        <pre class="listing">
+            <code>// file.<mark>ios</mark>.js</code>
+            <code>exports.getFile = function(path) {</code>
+            <code>    var fileManager = NSFileManager.defaultManager();</code>
+            <code>    return fileManager.createFileAtPathContentsAttributes(path);</code>
+            <code>}</code>
+            <code>// file.<mark>android</mark>.js</code>
+            <code>exports.getFile = function(path) {</code>
+            <code>    return new java.io.File(path);</code>
+            <code>}</code>
+            <code>// main.js</code>
+            <code>var File = <mark>require("./file")</mark>;</code>
+            <code>var file = File.getFile("path");</code>
+        </pre>
     </section>
 
     <section class="slide">
-        <h2 class="shout grow">Effect: Growing Shout</h2>
+        <h2>Layouts</h2>
+        <div class="fixed-table">
+            <div class="table-column">
+                <img src="pictures/absolute.png" alt="Absolute layout" height="80%"/>
+                <p>AbsoluteLayout</p>        
+            </div>
+            <div class="table-column right">
+                <img src="pictures/dock.png" alt="Dock layout" height="80%"/>
+                <p>DockLayout</p>        
+            </div>
+            <div class="table-column center">
+                <img src="pictures/grid.png" alt="Grid layout" height="80%"/>
+                <p>GridLayout</p>        
+            </div>
+            <div class="table-column center">
+                <img src="pictures/stack.png" alt="Stack layout" height="80%"/>
+                <p>StackLayout</p>        
+            </div>
+            <div class="table-column center">
+                <img src="pictures/wrap.png" alt="Wrap layout" height="80%"/>
+                <p>WrapLayout</p>        
+            </div>
+        </div>
     </section>
 
     <section class="slide">
-        <h2 class="shout shrink">Effect: Shrinking Shout</h2>
-    </section>
-
-    <section class="slide">
-        <figure>
-            <img class="cover" src="vendors/shower-ribbon/pictures/exact.png" alt="">
-            <figcaption class="white">Copyright © 2016 <a href="">Yours Truly</a>, Famous Inc.</figcaption>
-        </figure>
-    </section>
-
-    <section class="slide">
-        <img class="cover" src="vendors/shower-ribbon/pictures/tall.png" alt="">
-    </section>
-
-    <section class="slide">
-        <img class="cover" src="vendors/shower-ribbon/pictures/wide.png" alt="">
-    </section>
-
-    <section class="slide white">
-        <img class="place top left" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place top" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place top right" src="vendors/shower-ribbon/pictures/square.png" alt="">
-
-        <img class="place left" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place right" src="vendors/shower-ribbon/pictures/square.png" alt="">
-
-        <img class="place bottom left" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place bottom" src="vendors/shower-ribbon/pictures/square.png" alt="">
-        <img class="place bottom right" src="vendors/shower-ribbon/pictures/square.png" alt="">
-    </section>
-
-    <section class="slide" data-timing="00:03">
-        <h3 class="shout">Automatic switch slide after <strong>3 secs</strong> ...</h3>
-    </section>
-
-    <section class="slide">
-        <h3 class="shout">See you next month at WarsawJS</h3>
+        <h2>NativeScript + Angular = <3</h2>
+        <pre class="listing">
+            <code>import {Component} from "@angular/core";</code>
+            <code>@Component({</code>
+            <code>  selector: "my-app",</code>
+            <code>  template: <mark>"&lt;Label text=‘Hello!’>&lt;/Label>"</mark></code>
+            <code>})</code>
+            <code>export class AppComponent {}</code>
+        </pre>
     </section>
 
     <div class="progress"></div>
 
     <footer class="badge">
-        <a href="https://github.com/warsawjs/warsawjs-slides-template">Fork me on GitHub</a>
+        <a href="https://github.com/pawelkondraciuk/warsawjs-nativescript">Fork me on GitHub</a>
     </footer>
 
     <footer class="badge badge-down">

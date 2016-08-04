@@ -1,0 +1,30 @@
+.fixed-table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.fixed-table > .table-column {
+    display: table-cell;
+}
+.table-column.center {
+    text-align: center;
+}
+.table-column.right {
+    text-align: right;
+}
+
+li img {
+    height: 1.5em;
+    vertical-align: middle;
+}
+.v-middle {
+    vertical-align: middle;
+}
+/*mark.important {
+    background-color: #f7302f;
+    color: white;
+}*/
+
+.listing::before {
+    content: "" !important;
+}
