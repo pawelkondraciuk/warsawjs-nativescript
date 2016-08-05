@@ -48,8 +48,8 @@
         <div class="fixed-table">
             <div class="table-column">
                 <h2>Who?</h2>
-                Frontend Developer<br/>
-                ex Python Developer
+                Frontend Developer
+                <div class="next">ex Python Developer</div>
             </div>
             <div class="next table-column center">
                 <h2>Where?</h2>
@@ -169,6 +169,241 @@
     </section>
 
     <section class="slide">
+        <h2>Single thread benefits</h2>
+        <ul>
+            <li>Native API</li>
+            <li>Native performance</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="cover">
+        <h2 class="shout">Performance</h2>
+        <p class="source">source: <a href="https://github.com/NativeScript/sample-iOS-Profiling">https://github.com/NativeScript/sample-iOS-Profiling</a></p>
+    </section>
+
+    <section class="slide prism">
+        <h2>Startup time</h2>
+        <p>Blank app with a single button.</p>
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th class="col">Platform</th>
+                    <th>Run 1</th>
+                    <th>Run 2</th>
+                    <th>Run 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Native</td>
+                    <td>111ms</td>
+                    <td>105ms</td>
+                    <td>108ms</td>
+                </tr>
+                <tr>
+                    <td>React Native</td>
+                    <td>358ms</td>
+                    <td>361ms</td>
+                    <td>353ms</td>
+                </tr>
+                <tr>
+                    <td>Xamarin Forms</td>
+                    <td>484ms</td>
+                    <td>471ms</td>
+                    <td>469ms</td>
+                </tr>
+                <tr>
+                    <td>Cordova</td>
+                    <td>613ms</td>
+                    <td>612ms</td>
+                    <td>609ms</td>
+                </tr>
+                <tr>
+                    <td><strong>NativeScript</strong></td>
+                    <td><strong>674ms</strong></td>
+                    <td><strong>672ms</strong></td>
+                    <td><strong>670ms</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="slide prism">
+        <h2>Primitives</h2>
+        <p>The tests below show the marshaling of numbers between JavaScript and native. It is for 1 000 000 calls to native code.</p>
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Run 1</th>
+                    <th>Run 2</th>
+                    <th>Run 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Native</td>
+                    <td>5ms</td>
+                    <td>4ms</td>
+                    <td>4ms</td>
+                </tr>
+                <tr>
+                    <td>Xamarin</td>
+                    <td>27ms</td>
+                    <td>27ms</td>
+                    <td>28ms</td>
+                </tr>
+                <tr>
+                    <td><strong>NativeScript</strong></td>
+                    <td><strong>989ms</strong></td>
+                    <td><strong>998ms</strong></td>
+                    <td><strong>980ms</strong></td>
+                </tr>
+                <tr>
+                    <td>Appcelerator</td>
+                    <td>34444ms</td>
+                    <td>33969ms</td>
+                    <td>35916ms</td>
+                </tr>
+                <tr>
+                    <td>React Native</td>
+                    <td>130600ms</td>
+                    <td>125140ms</td>
+                    <td>127220ms</td>
+                </tr>
+                <tr>
+                    <td>Cordova</td>
+                    <td>351420ms</td>
+                    <td>357940ms</td>
+                    <td>356740ms</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="slide prism">
+        <h2>Strings</h2>
+        <p>The tests below show the marshaling of strings between JavaScript and native. It is for 100 000 calls to native code.</p>
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Run 1</th>
+                    <th>Run 2</th>
+                    <th>Run 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Native</td>
+                    <td>42ms</td>
+                    <td>42ms</td>
+                    <td>42ms</td>
+                </tr>
+                <tr>
+                    <td>Xamarin</td>
+                    <td>248ms</td>
+                    <td>234ms</td>
+                    <td>244ms</td>
+                </tr>
+                <tr>
+                    <td><strong>NativeScript</strong></td>
+                    <td><strong>415ms</strong></td>
+                    <td><strong>444ms</strong></td>
+                    <td><strong>418ms</strong></td>
+                </tr>
+                <tr>
+                    <td>Appcelerator</td>
+                    <td>3215ms</td>
+                    <td>3198ms</td>
+                    <td>3180ms</td>
+                </tr>
+                <tr>
+                    <td>React Native</td>
+                    <td>12358ms</td>
+                    <td>12464ms</td>
+                    <td>12547ms</td>
+                </tr>
+                <tr>
+                    <td>Cordova</td>
+                    <td>36864ms</td>
+                    <td>36063ms</td>
+                    <td>35861ms</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="slide prism">
+        <h2>Big Data</h2>
+        <p>The tests below show the marshaling of an array with 65 536 elements between JavaScript and native. It is for 200 calls to native code.</p>
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Run 1</th>
+                    <th>Run 2</th>
+                    <th>Run 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Native</td>
+                    <td>768ms</td>
+                    <td>774ms</td>
+                    <td>759ms</td>
+                </tr>
+                <tr>
+                    <td><strong>NativeScript</strong></td>
+                    <td><strong>1135ms</strong></td>
+                    <td><strong>1129ms</strong></td>
+                    <td><strong>1138ms</strong></td>
+                </tr>
+                <tr>
+                    <td>Xamarin</td>
+                    <td>3763ms</td>
+                    <td>3906ms</td>
+                    <td>3789ms</td>
+                </tr>
+                <tr>
+                    <td>Cordova</td>
+                    <td>9655ms</td>
+                    <td>9714ms</td>
+                    <td>9730ms</td>
+                </tr>
+                <tr>
+                    <td>React Native</td>
+                    <td>47873ms</td>
+                    <td>47695ms</td>
+                    <td>47859ms</td>
+                </tr>
+                <tr>
+                    <td>Appcelerator</td>
+                    <td>50091ms</td>
+                    <td>45149ms</td>
+                    <td>47927ms</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="slide">
+        <h2>Single thread drawbacks</h2>
+        <ul>
+            <li>heavy jobs may cause frame rate drop</li>
+            <li>solution?</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Background threads</h2>
+        <ul>
+            <li class="next">No mechanism in NativeScript<span class="next">...yet</span></li>
+            <li class="next">But lots of cases are covered!</li>
+        </ul>
+    </section>
+
+    <section class="slide">
         <h2>File system</h2>
         <pre class="listing">
             <code>var fs = <mark>require("file-system")</mark>;</code>
@@ -244,6 +479,10 @@
             <code>})</code>
             <code>export class AppComponent {}</code>
         </pre>
+    </section>
+
+    <section class="slide">
+        <h3 class="shout">See you next month at WarsawJS</h3>
     </section>
 
     <div class="progress"></div>

@@ -28,3 +28,11 @@ li img {
 .listing::before {
     content: "" !important;
 }
+
+.source {
+    position: absolute;
+    left: 0;
+    right: 60px;
+    bottom: 10px;
+    text-align: right;
+}
