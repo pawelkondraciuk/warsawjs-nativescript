@@ -40,7 +40,7 @@
             <h2>2016-08-10</h2>
 
             <!-- 5. Contact the speaker -->
-            <h2><a href="http://twitter.com/pawelkondraciuk">@pawelkondraciuk</a></h2>
+            <h2><a href="mailto:kondraciukpawel@gmail.com">kondraciukpawel@gmail.com</a></h2>
         </div>
     </section>
 
@@ -67,7 +67,7 @@
     <section class="slide">
         <h2>What are the common solutions?</h2>
         <ul>
-            <li>Native <mark>ObjC/Swift</mark>, <mark>C#</mark>, <mark>Java</mark></li>
+            <li class="next">Native <mark>ObjC/Swift</mark>, <mark>C#</mark>, <mark>Java</mark></li>
             <li class="next">Cross-compiled <mark>Xamarin</mark></li>
             <li class="next">Hybrid <mark>PhoneGap</mark>, <mark>Cordova</mark></li>
             <li class="next">Native <mark class="important">JavaScript</mark></li>
@@ -77,7 +77,7 @@
     <section class="slide">
         <h2>Native JavaScript</h2>
         <ul>
-            <li>Fuse - declarative markup</li>
+            <li class="next">Fuse - declarative markup</li>
             <li class="next">Tabris.js - Cordova modification</li>
             <li class="next">Appcelerator Titanium - paid, we don't like that</li>
             <li class="next">Facebook React Native - learn once, write everywhere</li>
@@ -88,7 +88,7 @@
     <section class="slide">
         <h2>Architecture</h2>
         <ul>
-            <li>No DOM</li>
+            <li class="next">No DOM</li>
             <li class="next">Native components</li>
             <li class="next">
                 JavaScript Virtual Machine
@@ -113,7 +113,7 @@
     <section class="slide">
         <h2>Telerik NativeScript</h2>
         <ul>
-            <li>Goal: 100% shared code</li>
+            <li class="next">Goal: 100% shared code</li>
             <li class="next">JavaScript, XML, CSS</li>
             <li class="next"><mark class="important">Direct access</mark> to native API</li>
         </ul>
@@ -165,6 +165,7 @@
 
     <section class="slide">
         <h2>Why NativeScript access native API directly whereas React Native uses wrappers?</h2>
+
     </section>
 
     <section class="slide">
@@ -406,7 +407,13 @@
     <section class="slide">
         <h2>Background threads</h2>
         <ul>
-            <li class="next">No mechanism in NativeScript<span class="next">...yet</span></li>
+            <li class="next">
+                No mechanism in NativeScript<span class="next">...yet</span>
+                <ul>
+                    <li class="next">Background JavaScript cannot access main thread directly</li>
+                    <li class="next">Limited to non-UI API only</li>
+                </ul>
+            </li>
             <li class="next">But lots of cases are already covered!</li>
         </ul>
     </section>
@@ -478,6 +485,10 @@
     </section>
 
     <section class="slide">
+        <img src="pictures/debug.png" alt="Debugging" class="cover"/>
+    </section>
+
+    <section class="slide">
         <h2 class="shout">Demo</h2>
     </section>
 
@@ -540,6 +551,7 @@
 
     <section class="slide">
         <h3 class="shout">Questions?</h3>
+        <p class="source">kondraciukpawel@gmail.com</p>
     </section>
 
     <section class="slide">
